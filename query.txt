@@ -1,0 +1,19 @@
+CREATE TABLE events (
+    id int NOT NULL AUTO_INCREMENT,
+    band varchar(50) NOT NULL,
+    place varchar(100),
+    event_date date,
+    tickets int, 
+    PRIMARY KEY (id)
+);
+INSERT INTO `events` (`id`, `image`, `band`, `place`, `event_date`, `tickets`) VALUES (NULL, 'lorde.jpg', 'Lorde', 'Neudorf Vineyards\r\nNelson, New Zealand', '2022-02-27', '100'), (NULL, 'lorde.jpg', 'Lorde', 'Days Bay\r\nEastbourne, New Zealand', '2022-03-02', '120');
+
+INSERT INTO `events` (`id`, `image`, `band`, `place`, `event_date`, `tickets`) VALUES (NULL, 'elton_john.jpg', 'Elton Jonh', 'Tele2 Arena\r\nJohanneshov, Sweden', '2021-09-17', '1000'), (NULL, 'elton_john.jpg', 'Elton Jonh', 'HARTWALL ARENA\r\nHelsinki, Finland', '2021-09-21', '1200');
+INSERT INTO `events` (`id`, `image`, `band`, `place`, `event_date`, `tickets`) VALUES (NULL, 'elton_john.jpg', 'Elton John', 'Telenor Arena Shuttlebuss\r\nOslo, Norway', '2021-09-25', '800'), (NULL, 'elton_john.jpg', 'Elton John', 'Hallenstadion\r\nZürich, Switzerland', '2021-10-05', '350');
+
+INSERT INTO `events` (`id`, `image`, `band`, `place`, `event_date`, `tickets`) VALUES (NULL, 'billie_eilish.jpeg', 'Billie Eilish', 'Smoothie King Center\r\nNew Orleans, LA', '2022-02-03', '278'), (NULL, 'billie_eilish.jpeg', 'Billie Eilish', 'Centre Bell\r\nMontreal, Canada', '2023-02-15', '190');
+
+
+CREATE TABLE users ( id int NOT NULL AUTO_INCREMENT, username varchar(50) NOT NULL, pass varchar(50), date_created date, PRIMARY KEY (id) );
+
+INSERT INTO `users` (`id`, `username`, `pass`, `date_created`) VALUES (NULL, 'marko.markovic', PASSWORD('marko123'), '2021-07-11'), (NULL, 'petar.petrovic', SHA1('petar123'), '2021-07-11');

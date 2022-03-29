@@ -1,0 +1,154 @@
+body {
+    font-size: 19px;
+}
+table{
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    text-align: left;
+}
+tr {
+    border-bottom: 1px solid #cbcbcb;
+}
+th, td{
+    border: none;
+    height: fit-content;
+    width: inherit;
+    padding: 10px;
+}
+tr:hover {
+    background: #F5F5F5;
+}
+
+form {
+    width: 50%;
+    margin: 50px auto;
+    text-align: right;
+    padding: 20px; 
+    border: 1px solid #bbbbbb; 
+    border-radius: 5px;
+}
+form .btn{
+    margin-top: 10px;
+    padding: 10px 30px 10px 30px;
+    font-size: 15px;
+    color: white;
+    background: #2b0374;
+    border: none;
+    border-radius: 5px;
+    text-align: right;    
+    
+}
+.input-group {
+    margin: 10px 0px 10px 0px;
+}
+.input-group label {
+    display: block;
+    text-align: left;
+    margin-left: 5%;
+    margin-bottom: 5px;
+    font-weight: bold;
+    
+}
+.input-group input {
+    height: 30px;
+    width: 93%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+
+.btn {
+    padding: 10px 30px 10px 30px;
+    font-size: 15px;
+    color: white;
+    background: #2b0374;
+    border: none;
+    border-radius: 5px; 
+    
+}
+.btn:hover {
+    background: #0355cf;
+}
+.btn-signUP{
+    text-decoration: none;
+    padding: 5px 10px 5px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    background: #1d7015dc;
+    color: white;
+    border: none;
+    border-radius: 5px; 
+}.btn-signUP:hover {
+    color: black;
+    background: #15ad0fb6;
+    transform: scale(1.4, 1.4);
+}
+
+.edit_btn {
+    text-decoration: none;
+    padding: 5px 15px 5px 15px;
+    background: #126e3a;
+    color: white;
+    border-radius: 5px;
+}
+.edit_btn:hover{
+    background: #229755;
+}
+.del_btn {
+    text-decoration: none;
+    padding: 5px 15px 5px 15px;
+    color: white;
+    border-radius: 5px;
+    background: #a70b0b;
+}
+.del_btn:hover{
+    background: #cf1212;
+}
+.msg {
+    margin: 30px auto; 
+    padding: 10px; 
+    border-radius: 5px; 
+    color: #3c763d; 
+    background: #dff0d8; 
+    border: 1px solid #3c763d;
+    width: fit-content;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 800px) {
+    table{
+        width: 80%;
+        margin: 30px auto;
+        display: grid;
+        border-collapse: collapse;
+        text-align: center;
+    }
+    tr {
+        border-bottom: 1px solid #cbcbcb;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+    .header-row{
+        display: none;
+    }
+    
+    th, td{
+        border: none;
+        height: fit-content;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 10px 10px 10px 10px;
+    }
+
+
+  }
+ 
